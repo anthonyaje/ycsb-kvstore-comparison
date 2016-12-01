@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.2">
+<file name="/home/anthony/YCSB/redis/src/main/java/com/yahoo/ycsb/db/package-info.java">
+</file>
+<file name="/home/anthony/YCSB/redis/src/main/java/com/yahoo/ycsb/db/RedisClient.java">
+</file>
+</checkstyle>
