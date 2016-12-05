@@ -1,0 +1,16 @@
+redis.clients.jedis.exceptions.JedisDataException: MOVED 11633 129.97.173.78:6379
+	at redis.clients.jedis.Protocol.processError(Protocol.java:54)
+	at redis.clients.jedis.Protocol.process(Protocol.java:61)
+	at redis.clients.jedis.Protocol.read(Protocol.java:122)
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:152)
+	at redis.clients.jedis.Jedis.hmset(Jedis.java:726)
+	at com.yahoo.ycsb.db.RedisClient.insert(RedisClient.java:120)
+	at com.yahoo.ycsb.DBWrapper.insert(DBWrapper.java:240)
+	at com.yahoo.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:592)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:475)
+	at java.lang.Thread.run(Thread.java:722)
+redis.clients.jedis.exceptions.JedisDataException: MOVED 10488 129.97.173.73:6379
+	at redis.clients.jedis.Protocol.processError(Protocol.java:54)
+	at redis.clients.jedis.Protocol.process(Protocol.java:61)
+	at redis.clients.jedis.Protocol.read(Protocol.java:122)
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:152)
