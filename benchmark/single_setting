@@ -1,0 +1,10 @@
+threadcount=1
+memcached.hosts=ugster08
+redis.host=ugster08
+redis.port=6379
+riak.hosts=ugster08
+riak.port=8087
+riak.bucket_type=ycsb
+as.host=ugster08
+as.namespace=ycsb
+as.timeout=5000
