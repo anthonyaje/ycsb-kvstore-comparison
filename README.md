@@ -2,10 +2,10 @@
 This project empirically evaluates Memcached, Redis and Aerospike key-value store leveraging Yahoo! Cloud System Benchmark (YCSB) with various workloads and benchmarking settings aiming to provide useful insight for each kv-store.  
 ## Note
 1. The code in this repository are based on [YCSB](https://github.com/brianfrankcooper/YCSB) repository.  
-2. Modified code in _redis_ and _redis-binding_ directory.  
+2. Modified code in [_redis_](https://github.com/anthonyaje/ycsb-kvstore-comparison/tree/master/redis) and [_redis-binding_](https://github.com/anthonyaje/ycsb-kvstore-comparison/tree/master/redis-binding) directory.  
 3. Automated scripts are added for benchmarking the three databases.   
-4. Configuration files for running YCSB in our benchmarking is available in _benchmark_ directory.
-5. Sample configuration files for running YCSB in our benchmarking is available in _benchmark/db_configs_ directory.
+4. Configuration files for running YCSB in our benchmarking is available in [_benchmark_](https://github.com/anthonyaje/ycsb-kvstore-comparison/tree/master/benchmark) directory.
+5. Sample configuration files for running YCSB in our benchmarking is available in [_benchmark/db_configs_](https://github.com/anthonyaje/ycsb-kvstore-comparison/tree/master/benchmark/db_configs) directory.
 
 
 ## Setting up the databases on Ubuntu 12.04
