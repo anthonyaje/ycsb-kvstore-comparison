@@ -2,7 +2,7 @@
 This project empirically evaluates Memcached, Redis and Aerospike key-value store leveraging Yahoo! Cloud System Benchmark (YCSB) with various workloads and benchmarking settings aiming to provide useful insight for each kv-store.  
 ## Note
 1. The code in this repository are based on [YCSB](https://github.com/brianfrankcooper/YCSB) repository.  
-2. Modified code in [_redis_](https://github.com/anthonyaje/ycsb-kvstore-comparison/tree/master/redis) and [_redis-binding_](https://github.com/anthonyaje/ycsb-kvstore-comparison/tree/master/redis-binding) directory.  
+2. Modified code is in [_redis_](https://github.com/anthonyaje/ycsb-kvstore-comparison/tree/master/redis) and [_redis-binding_](https://github.com/anthonyaje/ycsb-kvstore-comparison/tree/master/redis-binding) directory. ([Diff](https://github.com/anthonyaje/ycsb-kvstore-comparison/blob/master/redis/redis_modification_diff.txt))  
 3. Automated scripts are added for benchmarking the three databases.   
 4. Configuration files for running YCSB in our benchmarking is available in [_benchmark_](https://github.com/anthonyaje/ycsb-kvstore-comparison/tree/master/benchmark) directory.
 5. Sample configuration files for running YCSB in our benchmarking is available in [_benchmark/db_configs_](https://github.com/anthonyaje/ycsb-kvstore-comparison/tree/master/benchmark/db_configs) directory.
@@ -57,7 +57,15 @@ Start the databases server(s) as instructed above.
 
 ### Client side machine  
 Install the modified YCSB project  
-`git clone https://github.com/anthonyaje/ycsb-kvstore-comparison.git`  
+`git clone https://github.com/anthonyaje/ycsb-kvstore-comparison.git`
+
+__Notice before running cluster mode benchmarking__  
+`cd ~/ycsb-kvstore-comparison/redis-binding`    
+`cp -rf ./cluster-lib/* ./lib/`    
+
+__Notice before running single node benchmarking__  
+`cd ~/ycsb-kvstore-comparison/redis-binding`    
+`cp -rf ./single-lib/* ./lib/`    
 
 Execute the YCSB _load phase_   
 `./load_benchmark.sh [redis|riak|memcached] [single|cluster] [balanced|write_heavy|read_heavy]`  
